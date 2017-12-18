@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta Charset="UTF-8" />
+        <title>Minha Página</title>
+        <link type="text/css" rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+ 
+        </header>
+        <div id="sidebar-menu">
+            <ul class="menu">
+                <li class="menu-item corner-all">
+                    <span>Menu 1</span>
+                    <ul class="submenu">
+                        <li class="submenu-item">
+                            <a href="#">Submenu 1</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">Submenu 2</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">Submenu 3</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">Submenu 4</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">Submenu 5</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item corner-all">
+                    <span>Menu 2</span>
+                    <ul class="submenu">
+                        <li class="submenu-item">
+                            <a href="#">Submenu 1</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">Submenu 2</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">Submenu 3</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">Submenu 4</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">Submenu 5</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item corner-all">
+                    <span>Menu 3</span>
+                    <ul class="submenu">
+                        <li class="submenu-item">
+                            <a href="#">Submenu 1</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">Submenu 2</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">Submenu 3</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">Submenu 4</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">Submenu 5</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item corner-all">
+                    <span>Menu 4</span>
+                    <ul class="submenu">
+                        <li class="submenu-item">
+                            <a href="#">Submenu 1</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">Submenu 2</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">Submenu 3</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">Submenu 4</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">Submenu 5</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <footer>
+ 
+        </footer>
+    </body>
+</html>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.corner-all {
+    /* aqui vamos fazer nosso arredondamento das bordas */
+}
+ 
+#sidebar-menu {
+    /* podemos usar para definir propriedades gerais do menu como padding, margin, etc */
+}
+.menu-item {
+    /* aqui controlaremos a aparencia dos nossos menus principais */
+}
+.menu-item:hover .submenu {
+    /* aqui o mais importante acredito, como a lista de submenus irá se comportar ao passarmos o mouse sobre o menu principal */
+}
+.menu-item span {
+    /* como citado anteriormente, só para adicionarmos alguns estilos ao nosso texto */
+}
+.submenu {
+    /* aqui vão as propriedades principais da aparência do nosso submenu */
+}
+.submenu-item {
+    /* aqui as caracteristicas principais da aparência dos itens do nosso submenu */
+}
+.submenu a {
+    /* aqui controlamos a aparencia dos nossos links, ou seja, nosso submenus "clicavéis" */
+}
+.submenu a:hover {
+    /* e por fim o comportamento dos submenus ao passarmos o mouse sobre eles */
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.corner-all {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    /* definindo o raio das bordas para todos os motores de navegadores */
+}
+ 
+#sidebar-menu {
+    margin-left: 10px;
+    /* definição da margem esquerda do menu */
+}
+.menu-item {
+    display: block; /* não permite que outros elementos da página sobreponham o nosso menu */
+    /*float: left;*/
+    width: 10em; /* largura do menu principal */
+    padding: 0.2em; /* espaçamento interno do menu principal */
+    background-color: #1D5987; /* cor de fundo para o menu principal */
+    border: 0.1em solid #FFFFFF; /* borda branca para destacar em fundos coloridos */
+    text-align: center; /* alinhamento do texto */
+}
+.menu-item:hover .submenu {
+    display: block; /* explicado acima */
+    padding: 0.2em; /* explicado acima */
+}
+.menu-item span {
+    font-size: 1.1em; /* tamanho da fonte do menu principal */
+    color: #FFFFFF; /* cor da fonte do menu principal */
+    font-family: Courier, Verdana, Arial; /* tipo da fonte do menu principal */
+    font-weight: bold; /* negritando a fonte do menu principal */
+}
+.submenu {
+    position: relative; /* define que a posição do submenu vai ser relativa a sua tag pai */
+    display: none; /* não vai ser visivel por padrão */
+    background-color: #63b6f9; /* cor de fundo */
+    list-style: none; /* remove os marcadores padrão das listas */
+}
+.submenu a {
+    text-decoration: none; /* remove o sublinhado dos links */
+    color: #222222; /* define uma nova cor para os links dos submenus */
+}
+.submenu a:hover {
+    color: #CCCCCC; /* altera a cor do link do submenu para destacar ao passar o mouse */
+}
