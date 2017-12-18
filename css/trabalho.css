@@ -209,3 +209,25 @@ footer{
 	color: #ff1a1a;	
 	font-size: 20px;
 }
+
+	
+#galeria { 
+		padding: .5vw;
+		font-size: 0;
+		flex-flow: row wrap; 
+		display: flex;
+}
+#galeria div { 
+		flex: auto; 
+		width: 200px; 
+		margin: .5vw; 
+	}
+#galeria div img { 
+		width: 100%; 
+		height: auto; 
+	}
+
+@media screen and (max-width: 400px) {
+		header div { margin: 0; }
+		header { padding: 0; }
+}
